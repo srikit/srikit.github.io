@@ -3,8 +3,8 @@
  <html>
 
     <head>
-        <!-- HTML meta data. -->    
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- HTML meta data. --> 
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta charset="utf-8">
 
         <meta name="description" content="SriKIT is an open-source hardware design and development group.">
@@ -17,14 +17,15 @@
         <meta property="og:url" content="/">
         <meta property="og:description" content="SriKIT is an open-source hardware design and development group.">
 
-        <title>SriKIT</title>
+        <title>Clock Module | SriKIT</title>
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
         <!-- Style sheets. -->
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="css/responsive.css" rel="stylesheet" type="text/css">
-
+        
+        <link href="css/fonts.css" rel="stylesheet" type="text/css">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="css/effects/set2.css" rel="stylesheet" type="text/css">
         <link href="css/effects/normalize.css" rel="stylesheet" type="text/css">
@@ -46,7 +47,7 @@
                 <nav role="header-nav" class="navy">
 
                     <ul>
-                        <li class="nav-active"><a href="index.html" title="Catalog">Catalog</a></li>
+                        <li><a href="index.html" title="Catalog">Catalog</a></li>
                         <li><a href="about.html" title="About">About</a></li>
                         <li><a href="contact.html" title="Contact">Contact</a></li>
                     </ul>
@@ -57,51 +58,58 @@
 
         </header>
 
-        <main role="main-home-wrapper" class="container">
-            <!-- Page content block. -->
-        	
-            <div class="row">
+        <main role="main-inner-wrapper" class="container">
 
-            	<section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-                    <!-- Intro text section -->
+            <div class="work-details">
 
-                	<article role="pge-title-content">
+                <div class="row">
 
-                    	<header>
-                        	<h2><span>SriKIT</span> An Open Technology Space</h2>
+                    <!-- Project name / title. -->
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+
+                        <header role="work-title">
+                            <h2>Clock Module With Seven Segment Display</h2>
                         </header>
 
-                        <p>We believe open source is the best way to promote, encourage, and envision the technology. In SriKIT, we are developing open hardware and software to share this vision.</p>
+                    </div>
 
-                    </article>
+                    <div class="col-xs-12 col-sm-12 col-md-8">
 
-                </section>
+                        <!-- Project information section and links. -->
+                        <section>
 
-                <!-- Show featured product -->
+                            <p>This LED clock module uses a highly stable DS3231 real-time clock for timekeeping. The RTC and alarm are control by the STM8S103 microcontroller. This module also provides a slot to install a small CR1220 type battery to back up the time and alarm configuration.</p>
 
-                <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+                            <p>The module is designed to handle a generally available 14.2mm (0.56 inch) 4-digit seven-segment displays. It uses 12-pin (6-pin × 2) socket to connect the seven-segment display to the PCB, and it allows to mount the display unit off from the PCB.</p>
 
-                	<figure class="effect-oscar">
+                            <p>The "alarm terminal" of this module is available as an open-collector output, and it enables the user to connect an external circuitry to this module.</p>
 
-                    	<img src="images/kit-images/kt0001.jpg" alt="" class="img-responsive"/>
+                            <!-- Links to the project repositories. -->
+                            <p>
+                                <a href="https://github.com/srikit/ssd-clock-module" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i> Project Page</a> 
+                                <a href="https://github.com/srikit/ssd-clock-module/wiki" target="_blank" rel="noopener noreferrer"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Documentation</a>
+                            </p>
 
-                        <figcaption>
+                        </section>
+            
+                    </div>
 
-                        	<h2><span>Clock Module </span> With Seven Segment Display</h2>
-
-							<p>Simple LED clock module based on highly stable DS3231 real-time clock for timekeeping.</p>
-
-							<a href="kt0001.html">View more</a>
-
-                        </figcaption>
-
-                    </figure>
-
-                </section>
-
-                <!-- Start product catalog 1. -->
+                </div>
 
                 <div class="clearfix"></div>
+
+                <div class="work-images grid">
+
+                    <!-- Gallery. -->
+                    <ul class="grid-lod effect-2" id="grid">
+
+                        <li><img src="images/kit/kt0001/kt0001.jpg" alt="" class="img-responsive"/></li>
+                        <li><img src="images/kit/kt0001/kt0001-front.jpg" alt="" class="img-responsive"/></li>
+                        <li><img src="images/kit/kt0001/kt0001-back.jpg" alt="" class="img-responsive"/></li>
+
+                    </ul>
+
+                </div>
 
             </div>
 
@@ -116,7 +124,7 @@
 
             <!-- Navigation menu. -->
             <nav role="footer-nav">
-                <ul>
+            	<ul>
                 	<li><a href="index.html" title="Work">Catalog</a></li>
                     <li><a href="about.html" title="About">About</a></li>
                     <li><a href="contact.html" title="Contact">Contact</a></li>
