@@ -3,8 +3,8 @@
  <html>
 
     <head>
-        <!-- HTML meta data. -->    
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- HTML meta data. --> 
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta charset="utf-8">
 
         <meta name="description" content="SriKIT is an open-source hardware design and development group.">
@@ -17,14 +17,15 @@
         <meta property="og:url" content="/">
         <meta property="og:description" content="SriKIT is an open-source hardware design and development group.">
 
-        <title>SriKIT</title>
+        <title>Programmable Timer Module | SriKIT</title>
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
         <!-- Style sheets. -->
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="css/responsive.css" rel="stylesheet" type="text/css">
-
+        
+        <link href="css/fonts.css" rel="stylesheet" type="text/css">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="css/effects/set2.css" rel="stylesheet" type="text/css">
         <link href="css/effects/normalize.css" rel="stylesheet" type="text/css">
@@ -46,7 +47,7 @@
                 <nav role="header-nav" class="navy">
 
                     <ul>
-                        <li class="nav-active"><a href="index.html" title="Catalog">Catalog</a></li>
+                        <li><a href="index.html" title="Catalog">Catalog</a></li>
                         <li><a href="about.html" title="About">About</a></li>
                         <li><a href="contact.html" title="Contact">Contact</a></li>
                     </ul>
@@ -57,111 +58,57 @@
 
         </header>
 
-        <main role="main-home-wrapper" class="container">
-            <!-- Page content block. -->
-        	
-            <div class="row">
+        <main role="main-inner-wrapper" class="container">
 
-            	<section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-                    <!-- Intro text section -->
+            <div class="work-details">
 
-                	<article role="pge-title-content">
+                <div class="row">
 
-                    	<header>
-                        	<h2><span>SriKIT</span> An Open Technology Space</h2>
+                    <!-- Project name / title. -->
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+
+                        <header role="work-title">
+                            <h2>Programmable Timer Module</h2>
                         </header>
 
-                        <p>We believe open source is the best way to promote, encourage, and envision the technology. In SriKIT, we are developing open hardware and software to share this vision.</p>
+                    </div>
 
-                    </article>
+                    <div class="col-xs-12 col-sm-12 col-md-8">
 
-                </section>
+                        <!-- Project information section and links. -->
+                        <section>
 
-                <!-- Show featured product -->
+                            <p>Programmable timer lite is a miniature, USB programmable timer module. This module can handle more than 100 alarm configurations and trigger the output channel based on the programmed conditions. The timer module can program using SRIKit's Timer Controller software.</p>
 
-                <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+                            <p>All the timer configurations are store in the EEPROM to prevent the loss of data during power failures.</p>
 
-                	<figure class="effect-oscar">
+                            <p>This module is specifically developed to handle long-duration alarm configurations which can span up to years.</p>
+                            
+                            <!-- Links to the project repositories. -->
+                            <p>
+                                <a href="https://github.com/srikit/prog-timer-lite" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i> Project Page</a> 
+                                <a href="https://github.com/srikit/prog-timer-lite/wiki" target="_blank" rel="noopener noreferrer"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Documentation</a>
+                            </p>
 
-                    	<img src="images/kit-images/kt0001.jpg" alt="" class="img-responsive"/>
+                        </section>
+            
+                    </div>
 
-                        <figcaption>
-
-                        	<h2><span>Clock Module </span> With Seven Segment Display</h2>
-
-							<p>Simple LED clock module based on highly stable DS3231 real-time clock for timekeeping.</p>
-
-							<a href="kt0001.html">View more</a>
-
-                        </figcaption>
-
-                    </figure>
-
-                </section>
-
-                <!-- Start product catalog 1. -->
+                </div>
 
                 <div class="clearfix"></div>
 
-                <!-- Product catalog left. -->
+                <div class="work-images grid">
 
-                <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
+                    <!-- Gallery. -->
                     <ul class="grid-lod effect-2" id="grid">
 
-                        <li>
-
-                        	<figure class="effect-oscar">
-
-                                <img src="images/kit-images/kt0005.jpg" alt="" class="img-responsive"/>
-
-                                <figcaption>
-
-                                        <h2><span>FM Stereo</span> Receiver Module</h2>
-
-                                        <p>RDA5807 based FM stereo radio module with auto-scanning and memory manager.</p>
-
-                                        <a href="kt0005.html">View more</a>
-
-                                </figcaption>
-
-                            </figure>
-
-                        </li>
+                        <li><img src="images/kit/kt0003/kt0003.jpg" alt="" class="img-responsive"/></li>
+                        <li><img src="images/kit/kt0003/kt0003-bottom.jpg" alt="" class="img-responsive"/></li>
 
                     </ul>
 
-                </section>   
-
-                <!-- Product catalog right. -->
-                
-                <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                    <ul class="grid-lod effect-2" id="grid">
-
-                        <li>
-
-                        	<figure class="effect-oscar">
-
-                                <img src="images/kit-images/kt0003.jpg" alt="" class="img-responsive"/>
-
-                                <figcaption>
-
-                                        <h2><span>Programmable</span> Timer Module</h2>
-
-                                        <p>Miniature, USB programmable, long-duration timer module.</p>
-
-                                        <a href="kt0003.html">View more</a>
-
-                                </figcaption>
-
-                            </figure>
-
-                        </li>
-
-                    </ul>
-
-                </section>
+                </div>
 
             </div>
 
@@ -176,7 +123,7 @@
 
             <!-- Navigation menu. -->
             <nav role="footer-nav">
-                <ul>
+            	<ul>
                 	<li><a href="index.html" title="Work">Catalog</a></li>
                     <li><a href="about.html" title="About">About</a></li>
                     <li><a href="contact.html" title="Contact">Contact</a></li>
